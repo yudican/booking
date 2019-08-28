@@ -11,7 +11,7 @@ class About_us extends CI_Controller {
 	public function index()
 	{
 		$data = [
-			'title' => 'Home',
+			'title' => 'About Us',
 			'isi'	=> 'client/about_us',
 			'result' => $this->db->get('aboutUs',1)->row_array(),
 			'partner' => $this->db->get('partnerTable')->result_array()
