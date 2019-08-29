@@ -33,7 +33,7 @@
             <li class="dropdown">
               <a href="#" class="nav-link has-dropdown"><i class="fas fa-th-large"></i> <span>Setting</span></a>
               <ul class="dropdown-menu">
-              	<li><a class="nav-link" href="<?php echo site_url('dashboard/site-setiing') ?>">Website Setting</a></li>
+              	<li><a class="nav-link" href="<?php echo site_url('dashboard/site-setting') ?>">Website Setting</a></li>
                 <li><a class="nav-link" href="<?php echo site_url('dashboard/banner-setting') ?>">Banner Setting</a></li>
                 <li><a class="nav-link" href="<?php echo site_url('dashboard/change/profile') ?>">Change profile</a></li>
               </ul>
