@@ -11,8 +11,19 @@
           <li class="nav-item <?php echo (empty($this->uri->segment(1))) ? 'active' : ''; ?>"><a href="<?php echo site_url(); ?>" class="nav-link">Home</a></li>
           <li class="nav-item <?php echo ($this->uri->segment(1) == 'booking') ? 'active' : ''; ?>"><a href="<?php echo site_url('booking'); ?>" class="nav-link">Appointment</a></li>
           <li class="nav-item <?php echo ($this->uri->segment(1) == 'news') ? 'active' : ''; ?>"><a href="<?php echo site_url('news'); ?>" class="nav-link">News</a></li>
-          <li class="nav-item <?php echo ($this->uri->segment(1) == 'information') ? 'active' : ''; ?>"><a href="<?php echo site_url('information'); ?>" class="nav-link">Information</a></li>
         </ul>
+        <div class="dropdown">
+				  <button id="dLabel" type="button" data-toggle="dropdown" class="dropdown" aria-haspopup="true" aria-expanded="false">
+				    Information
+				  </button>
+				  <div class="dropdown-menu">
+					  <a class="dropdown-item" href="<?php echo site_url('how-to-export'); ?>">How to export</a>
+					  <a class="dropdown-item" href="<?php echo site_url('product'); ?>">Product</a>
+					  <a class="dropdown-item" href="<?php echo site_url('market'); ?>">Market</a>
+					   <a class="dropdown-item" href="<?php echo site_url('event'); ?>">Event</a>
+					  <a class="dropdown-item" href="<?php echo site_url('our-story'); ?>">Our Story</a>
+					</div>
+				</div>
 	      <div class="dropdown">
 				  <button id="dLabel" type="button" data-toggle="dropdown" class="dropdown" aria-haspopup="true" aria-expanded="false">
 				    About

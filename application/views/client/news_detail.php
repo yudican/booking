@@ -1,3 +1,8 @@
+  <style type="text/css">
+	img {
+	    max-width: 100%;
+	}
+</style>
   <div id="blog" class="site-section">
     <div class="container">
             

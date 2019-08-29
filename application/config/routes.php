@@ -59,6 +59,12 @@ $route['news/(:num)'] = 'home/news/$1';
 $route['news/(:num)/(:num)/(:num)/(:any)'] = 'home/news_detail';
 $route['contact'] = 'home/contact';
 $route['information'] = 'home/information';
+$route['how-to-export'] = 'information';
+$route['product'] = 'information/product';
+$route['market'] = 'information/market';
+$route['event'] = 'information/event';
+$route['our-story'] = 'information/our_story';
+$route['faq'] = 'information/faq';
 
 $route['member/register'] = 'member';
 $route['member/login'] = 'member/login';
@@ -133,6 +139,14 @@ $route['dashboard/service/edit/(:num)'] = 'admin/service/edit/$1';
 $route['dashboard/employee'] = 'admin/employee';
 $route['dashboard/employee/delete/(:num)'] = 'admin/employee/delete/$1';
 $route['dashboard/employee/edit/(:num)'] = 'admin/employee/edit/$1';
+
+$route['dashboard/how-to-export'] = 'admin/information';
+$route['dashboard/export'] = 'admin/information/export';
+$route['dashboard/product'] = 'admin/information/article';
+$route['dashboard/event'] = 'admin/information/article';
+$route['dashboard/story'] = 'admin/information/article';
+$route['dashboard/faq'] = 'admin/information/article';
+$route['dashboard/market'] = 'admin/information/market';
 
 $route['default_controller'] = 'home';
 $route['404_override'] = '';

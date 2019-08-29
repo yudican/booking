@@ -67,7 +67,9 @@
 		                          <th><?php echo $no ?></th>
 		                          <th><?php echo $data['partnerTitle'] ?></th>
 		                          <th><?php echo $data['partnerName'] ?></th>
-		                          <th><a href="<?php echo site_url('dashboard/partner/update/'.$data['partnerId']); ?>" class="btn btn-success"><i class="fa fa-edit"></i></a></th>
+		                          <th><a href="<?php echo site_url('dashboard/partner/update/'.$data['partnerId']); ?>" class="btn btn-success"><i class="fa fa-edit"></i></a>
+		                          <a href="<?php echo site_url('dashboard/partner/delete/'.$data['partnerId']); ?>" class="btn btn-danger"><i class="fa fa-trash"></i></a>
+		                        	</th>
 		                        </tr>
                         	<?php } ?>
                         </tbody>

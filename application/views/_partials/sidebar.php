@@ -21,7 +21,12 @@
               <ul class="dropdown-menu">
                 <li class="<?php echo ($this->uri->segment(2) == 'about-us') ? 'active':''; ?>"><a class="nav-link" href="<?php echo site_url('dashboard/about-us') ?>">About Us</a></li>
                 <li class="<?php echo ($this->uri->segment(2) == 'contact') ? 'active':''; ?>"><a class="nav-link" href="<?php echo site_url('dashboard/contact') ?>">Contact</a></li>
-                <li class="<?php echo ($this->uri->segment(2) == 'contact') ? 'active':''; ?>"><a class="nav-link" href="<?php echo site_url('dashboard/information') ?>">Information</a></li>
+                <li class="<?php echo ($this->uri->segment(2) == 'contact') ? 'active':''; ?>"><a class="nav-link" href="<?php echo site_url('dashboard/how-to-export') ?>">how to export</a></li>
+                <li class="<?php echo ($this->uri->segment(2) == 'contact') ? 'active':''; ?>"><a class="nav-link" href="<?php echo site_url('dashboard/product') ?>">product</a></li>
+                <li class="<?php echo ($this->uri->segment(2) == 'contact') ? 'active':''; ?>"><a class="nav-link" href="<?php echo site_url('dashboard/event') ?>">event</a></li>
+                <li class="<?php echo ($this->uri->segment(2) == 'contact') ? 'active':''; ?>"><a class="nav-link" href="<?php echo site_url('dashboard/market') ?>">market</a></li>
+                <li class="<?php echo ($this->uri->segment(2) == 'contact') ? 'active':''; ?>"><a class="nav-link" href="<?php echo site_url('dashboard/story') ?>">our story</a></li>
+                <li class="<?php echo ($this->uri->segment(2) == 'contact') ? 'active':''; ?>"><a class="nav-link" href="<?php echo site_url('dashboard/faq') ?>">FAQ</a></li>
               </ul>
             </li>
             <li><a class="nav-link" href="<?php echo site_url('dashboard/news-list') ?>"><i class="far fa-square"></i> <span>News</span></a></li>

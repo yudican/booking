@@ -19,7 +19,7 @@
                 </div>
                 <div class="form-group">
                   <label for="newsBody">body</label>
-                   <textarea class="form-control" class="form-control" id="myEditor" name="newsBody" placeholder="body About Us"><?php echo isset($data['newsBody']) ? set_value('newsBody',$data['newsBody']) : '';  ?></textarea>
+                   <textarea class="form-control" class="form-control" id="myEditor" name="newsBody" placeholder="news body"><?php echo isset($data['newsBody']) ? set_value('newsBody',$data['newsBody']) : '';  ?></textarea>
                     <span class="text-danger"><?php echo form_error('title') ?></span>
                 </div>
                 <a href="<?php echo site_url('dashboard/news-list') ?>" class="btn btn-danger"><i class="fa fa-times"></i> cancel</a>
@@ -51,7 +51,7 @@
                 <tbody>
                 	<?php $no=1; foreach ($news as $row) { ?>
                 		<tr>
-                      <th><?php echo $no ?></th>
+                      <th><?php echo $no++ ?></th>
                       <th><?php echo substr($row['newsTitle'], 0,30) ?>...</th>
                       <th><?php echo substr($row['newsBody'], 0,70) ?>...</th>
                       <th><a href="<?php echo site_url('dashboard/news-list/update/'.$row['newsId']); ?>" class="btn btn-success"><i class="fa fa-edit"></i></a>
