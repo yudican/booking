@@ -24,6 +24,9 @@
 					  <a class="dropdown-item" href="<?php echo site_url('our-story'); ?>">Our Story</a>
 					</div>
 				</div>
+				<div class="dropdown">
+				  <a class="dropdown-item" href="<?php echo site_url('faq'); ?>">FAQ</a>
+				</div>
 	      <div class="dropdown">
 				  <button id="dLabel" type="button" data-toggle="dropdown" class="dropdown" aria-haspopup="true" aria-expanded="false">
 				    About

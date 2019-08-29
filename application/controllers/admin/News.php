@@ -18,7 +18,7 @@ class News extends CI_Controller {
 		$data = [
 			'title' => 'NEWS LIST',
 			'isi'	=> 'admin/pages_news',
-			'news' => $this->news->getRecord()
+			'news' => $this->db->get_where('newsTable',['status' => 1])->result_array()
 		];
 		$this->load->view('index', $data);
 	}
@@ -138,7 +138,7 @@ class News extends CI_Controller {
             $data['postDate']       = date('Y-m-d');
             $data['newsBanner'] = $file['file_name'];
             $data['userId']       = $uid;
-            
+
             if ($this->news->insertRecord($data)) {
 				$this->session->set_flashdata('success', 'data berhasil di simpan');
 				redirect(site_url('dashboard/news-list'));
