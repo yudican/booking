@@ -27,7 +27,7 @@ class Information extends CI_Controller {
 	{
 		$id = $this->uri->segment(4);
 		$data = [
-			'title' => 'News Detail',
+			'title' => 'Product Detail',
 			'isi'	=> 'client/news_detail',
 			'val' => $this->db->get_where('newsTable',['status' => 2],1)->row_array(),
 			'recent' => $this->db->order_by('newsId','DESC')->get('newsTable',5)->result_array()
@@ -39,7 +39,7 @@ class Information extends CI_Controller {
 	public function market()
 	{
 		$data = [
-			'title' => 'Home',
+			'title' => 'Market',
 			'isi'	=> 'client/market',
 			'file' => $this->db->get_where('exportTable',['status' => 2],1)->row_array(),
 		];

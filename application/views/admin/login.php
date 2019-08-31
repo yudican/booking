@@ -32,7 +32,7 @@
                 <?php echo form_open('dashboard/login',['id' => 'login']); ?>
                   <div class="form-group">
                     <label for="email">Email</label>
-                    <input type="text" name="userEmail" class="form-control" id="userEmail" placeholder="UserEmail" value="<?php echo set_value('userEmail') ?>">
+                    <input type="text" name="userEmail" class="form-control" id="userEmail" placeholder="username or email" value="<?php echo set_value('userEmail') ?>">
                     <div class="invalid-feedback">
                       <?php echo form_error('userEmail') ?>
                     </div>

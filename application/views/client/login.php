@@ -16,7 +16,7 @@
                 <div class="col-md-12 mb-3 mb-lg-0">
                   <label for="userEmail">Username or email</label>
                   <div class="field-icon-wrap">
-                    <input type="text" name="userEmail" class="form-control" id="userEmail" placeholder="UserEmail" value="<?php echo set_value('userEmail') ?>">
+                    <input type="text" name="userEmail" class="form-control" id="userEmail" placeholder="username or email" value="<?php echo set_value('userEmail') ?>">
                     <small class="text-danger"><?php echo form_error('userEmail') ?></small>
                   </div>
                 </div>
