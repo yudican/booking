@@ -25,11 +25,6 @@ class Information extends CI_Controller {
 	}
 	public function export()
 	{
-		ini_set('post_max_size', '750M');
-		ini_set('upload_max_filesize', '750M');
-		ini_set('max_execution_time', 7000);
-		ini_set('max_input_time', 7000);
-		ini_set('memory_limit', '10000M');
 		
 		$config['upload_path']          = './upload/';
         $config['allowed_types']        = 'gif|jpg|png|jpeg|pdf';
