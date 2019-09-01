@@ -29,7 +29,7 @@ class Information extends CI_Controller {
 		ini_set('upload_max_filesize', '750M');
 		ini_set('max_execution_time', 5000);
 		ini_set('max_input_time', 5000);
-		ini_set('memory_limit', '1000M');
+		ini_set('memory_limit', '10000M');
 		
 		$config['upload_path']          = './upload/';
         $config['allowed_types']        = 'gif|jpg|png|jpeg|pdf';
