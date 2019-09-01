@@ -15,9 +15,20 @@ class Information extends CI_Controller {
 	public function index()
 	{
 		$data = [
-			'title' => 'Home',
+			'title' => 'Proses Export',
 			'isi'	=> 'client/how-to-export',
 			'file' => $this->db->get_where('exportTable',['status' => 1],1)->row_array(),
+		];
+
+		$this->load->view('client/home', $data);
+	}
+
+	public function peraturan()
+	{
+		$data = [
+			'title' => 'Peraturan Export',
+			'isi'	=> 'client/how-to-export',
+			'file' => $this->db->get_where('exportTable',['status' => 4],1)->row_array(),
 		];
 
 		$this->load->view('client/home', $data);

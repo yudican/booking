@@ -16,13 +16,19 @@
 				  <button id="dLabel" type="button" data-toggle="dropdown" class="dropdown" aria-haspopup="true" aria-expanded="false">
 				    Information
 				  </button>
-				  <div class="dropdown-menu">
-					  <a class="dropdown-item" href="<?php echo site_url('how-to-export'); ?>">How to export</a>
-					  <a class="dropdown-item" href="<?php echo site_url('product'); ?>">Product</a>
-					  <a class="dropdown-item" href="<?php echo site_url('market'); ?>">Market</a>
-					   <a class="dropdown-item" href="<?php echo site_url('event'); ?>">Event</a>
-					  <a class="dropdown-item" href="<?php echo site_url('our-story'); ?>">Our Story</a>
-					</div>
+					<ul class="dropdown-menu">
+						<li class="dropdown-submenu">
+	            <a class="dropdown-item dropdown-toggle" href="#">How To export</a>
+	            <ul class="dropdown-menu">
+	              <li><a class="dropdown-item" href="<?php echo site_url('proses'); ?>">Proses</a></li>
+	              <li><a class="dropdown-item" href="<?php echo site_url('peraturan-export'); ?>">Peraturan export</a></li>
+	            </ul>
+	          </li>
+					  <li><a class="dropdown-item" href="<?php echo site_url('product'); ?>">Product</a></li>
+					  <li><a class="dropdown-item" href="<?php echo site_url('market'); ?>">Market</a></li>
+					   <li><a class="dropdown-item" href="<?php echo site_url('event'); ?>">Event</a></li>
+					  <li><a class="dropdown-item" href="<?php echo site_url('our-story'); ?>">Our Story</a></li>
+					</ul>
 				</div>
 				<div class="dropdown">
 				  <a class="dropdown-item" href="<?php echo site_url('faq'); ?>">FAQ</a>

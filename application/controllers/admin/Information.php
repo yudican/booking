@@ -28,7 +28,6 @@ class Information extends CI_Controller {
 		
 		$config['upload_path']          = './upload/';
         $config['allowed_types']        = 'gif|jpg|png|jpeg|pdf';
-        $config['max_size']             = 10000;
 
         $this->load->library('upload', $config);
         $status = $this->input->post('status');
